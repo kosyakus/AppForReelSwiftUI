@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct AppForReelSwiftUIApp: App {
+struct MyApp: App {
+//    var settings = UserSettings()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .environmentObject(settings)
         }
     }
 }

@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    
+    @State private var isOn = false
+
+        var body: some View {
+            Toggle("Включено", isOn: $isOn)
+                .padding(.trailing, 20)
+                .padding(.leading, 20)
+            
+            let _ = print($isOn)
         }
-        .padding()
-    }
 }
 
 #Preview {
     ContentView()
 }
+
